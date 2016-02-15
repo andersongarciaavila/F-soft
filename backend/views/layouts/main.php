@@ -28,7 +28,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'My Company',
+        'brandLabel' => 'F-SOFT',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -41,8 +41,8 @@ AppAsset::register($this);
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
         $menuItems[] = [
-            'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-            'url' => ['/site/logout'],
+            'label' => 'Login (' . Yii::$app->user->identity->username . ')',
+            'url' => ['/site/login'],
             'linkOptions' => ['data-method' => 'post']
         ];
     }
@@ -64,7 +64,7 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; F-SOFT <?= date('Y') ?></p>
 
         <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
